@@ -6,7 +6,12 @@ from app.core.logging import setup_logging
 
 app = FastAPI(title="Smart Task AI Microservice")
 
-Base.metadata.create_all(bind=engine)
+# Logging setup
+setup_logging()
+
+@app.on_event("startup")
+def on_startup():
+    Base.metadata.create_all(bind=engine)
 
 app.include_router(auth.router, prefix="/auth")
 app.include_router(tasks.router, prefix="/tasks")
