@@ -18,8 +18,6 @@ This project demonstrates core backend engineering concepts including:
 
 ## 🏗 Architecture
 
-The project follows a layered Clean Architecture structure:
-
 ```
 app/
  ├── api/               # REST endpoints
@@ -34,7 +32,10 @@ This separation ensures:
 * Infrastructure can be replaced without affecting domain logic
 * Clear separation of concerns
 
-(Architecture diagram will be added here)
+
+<p align="center">
+  <img src="docs/architecture.png" width="800"/>
+</p> 
 
 ---
 
