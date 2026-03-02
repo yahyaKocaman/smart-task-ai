@@ -117,7 +117,7 @@ Response:
 * JWT
 * Prometheus Instrumentator
 
-👥 Project Team
+## 👥 Project Team
 
 This project was developed by:
 
